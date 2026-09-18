@@ -1,0 +1,24 @@
+[package]
+name = "build-your-own-harness"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+anyhow = "1.0.104"
+async-stream = "0.3.6"
+async-trait = "0.1.92"
+clap = { version = "4.6.7", features = ["derive", "env"] }
+crossterm = "0.29.0"
+futures = "0.3.34"
+ratatui = "0.30.2"
+reqwest = { version = "0.13.5", features = ["json", "stream"] }
+serde = { version = "1.0.229", features = ["derive"] }
+serde_json = "1.0.151"
+thiserror = "2.0.20"
+tokio = { version = "1.53.1", features = ["full"] }
+tokio-stream = "0.1.19"
+tracing = "0.1.44"
+tracing-subscriber = { version = "0.3.23", features = ["env-filter"] }
+
+[dev-dependencies]
+tempfile = "3.27.0"
